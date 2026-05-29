@@ -1,5 +1,7 @@
 # amplify
 node_modules
+web/.next
+web/out
 .amplify
 amplify_outputs*
 amplifyconfiguration*
