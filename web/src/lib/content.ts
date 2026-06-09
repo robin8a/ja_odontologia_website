@@ -6,11 +6,11 @@ export const site = {
     "Ortodoncia de alta precisión e Invisalign Doctor certificada en Cali. Odontología integral con tecnología de última generación.",
   location: "Unicentro, Oasis 503B · Cali",
   instagram: "https://www.instagram.com/ortodoncia.isajaramillo/",
-  whatsapp: "https://wa.me/573150000000",
+  whatsapp: "https://wa.me/573173834417",
   whatsappMessage:
-    "https://wa.me/573150000000?text=Hola%20Dra.%20Isabel%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20tratamiento.",
+    "https://wa.me/573173834417?text=Hola%20Dra.%20Isabel%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20tratamiento.",
   email: "contacto@isajaramillo.com",
-  phone: "+57 (315) 000-0000",
+  phone: "+57 (317) 383-4417",
   hours: "Lun – Sáb · 8:00am – 6:00pm",
 } as const;
 
