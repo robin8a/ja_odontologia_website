@@ -3,7 +3,7 @@ export const site = {
   tagline: "Ortodoncia · Odontología",
   title: "Dra. Isabel Jaramillo · Ortodoncia & Odontología Integral · Cali",
   description:
-    "Ortodoncia de alta precisión e Invisalign Doctor certificada en Cali. Odontología integral con tecnología de última generación.",
+    "Odontología Integral, Estética y Ortodoncia Digital, pensadas para cada paciente, con tecnología de última generación en el corazón de Cali, Colombia.",
   location: "Unicentro, Oasis 503B · Cali",
   instagram: "https://www.instagram.com/ortodoncia.isajaramillo/",
   whatsapp: "https://wa.me/573177372490",
@@ -28,7 +28,7 @@ export const hero = {
   titleEm: "sonrisa,",
   titleEnd: "transforma tu vida",
   subtitle:
-    "Ortodoncia de alta precisión e Invisalign Doctor certificada. Odontología integral pensada para cada paciente, con tecnología de última generación en el corazón de Cali.",
+    "Odontología Integral, Estética y Ortodoncia Digital, pensadas para cada paciente, con tecnología de última generación en el corazón de Cali, Colombia.",
   stats: [
     { value: "1024", label: "Seguidores Instagram", count: true },
     { value: "+8", label: "Años de experiencia" },
