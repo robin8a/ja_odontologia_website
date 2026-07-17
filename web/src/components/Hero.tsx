@@ -127,12 +127,12 @@ export function Hero() {
               </div>
             </div>
 
-            <div className="absolute -right-4 top-16 rounded-2xl bg-primary px-5 py-4 text-center text-white shadow-lg md:-right-8">
-              <strong className="block font-serif text-3xl font-semibold">{hero.badgeSco.title}</strong>
-              <span className="text-[0.65rem] uppercase tracking-wider opacity-80">
-                Soc. Colombiana
-                <br />
-                de Ortodoncia
+            <div className="absolute -right-4 top-16 max-w-[11rem] rounded-2xl bg-primary px-4 py-4 text-center text-white shadow-lg md:-right-8 md:px-5">
+              <strong className="block font-serif text-base font-semibold leading-snug">
+                {hero.badgeSco.title}
+              </strong>
+              <span className="mt-1 block text-[0.65rem] uppercase tracking-wider opacity-80">
+                {hero.badgeSco.subtitle}
               </span>
             </div>
           </div>

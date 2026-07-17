@@ -35,7 +35,7 @@ export const hero = {
     { value: "✓", label: "Invisalign Doctor Cert." },
   ],
   badgeUniversity: { title: "Universidad del Valle", subtitle: "Especialista en Ortodoncia" },
-  badgeSco: { title: "SCO", subtitle: "Soc. Colombiana de Ortodoncia" },
+  badgeSco: { title: "Sociedad Colombiana", subtitle: "de Ortodoncia" },
 };
 
 export const marqueeItems = [
@@ -46,7 +46,7 @@ export const marqueeItems = [
   "Carillas de Porcelana",
   "Cali · Colombia",
   "Unicentro Oasis 503B",
-  "Soc. Colombiana Ortodoncia",
+  "Sociedad Colombiana de Ortodoncia",
 ];
 
 export const services = [
@@ -93,7 +93,7 @@ export const about = {
   years: "+8",
   credentials: [
     "Especialista en Ortodoncia — Universidad del Valle",
-    "Miembro de la Soc. Colombiana de Ortodoncia (SCO)",
+    "Miembro de la Sociedad Colombiana de Ortodoncia",
     "Invisalign Doctor Certificada",
     "Congresos internacionales de actualización continua",
   ],
@@ -122,7 +122,7 @@ export const whyChooseUs = {
   points: [
     "Ortodoncia y odontología integral en un solo lugar",
     "Enfoque personalizado para cada paciente",
-    "Invisalign Doctor certificada y miembro de la SCO",
+    "Invisalign Doctor certificada y miembro de la Sociedad Colombiana de Ortodoncia",
     "Tecnología digital: escáner intraoral y láser de diodo",
     "Consultorio en Unicentro, Cali — horarios flexibles",
   ],
