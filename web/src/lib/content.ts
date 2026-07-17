@@ -30,9 +30,15 @@ export const hero = {
   subtitle:
     "Odontología Integral, Estética y Ortodoncia Digital, pensadas para cada paciente, con tecnología de última generación en el corazón de Cali, Colombia.",
   stats: [
-    { value: "1024", label: "Seguidores Instagram", count: true },
-    { value: "+8", label: "Años de experiencia" },
-    { value: "✓", label: "Invisalign Doctor Cert." },
+    {
+      value: "1024",
+      label: "Seguidores Instagram",
+      count: true,
+      href: site.instagram,
+    },
+    { value: "+18", label: "Años de experiencia" },
+    { value: "✓", label: "Invisalign Doctor" },
+    { value: "✓", label: "Niños y Adultos" },
   ],
   badgeUniversity: { title: "Universidad del Valle", subtitle: "Especialista en Ortodoncia" },
   badgeSco: { title: "Sociedad Colombiana", subtitle: "de Ortodoncia" },

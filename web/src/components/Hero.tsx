@@ -29,7 +29,9 @@ function useCountUp(target: number, active: boolean) {
 export function Hero() {
   const counterRef = useRef<HTMLDivElement>(null);
   const [countActive, setCountActive] = useState(false);
-  const count = useCountUp(1024, countActive);
+  const followersStat = hero.stats.find((s) => s.count);
+  const followersTarget = followersStat ? Number(followersStat.value) || 0 : 0;
+  const count = useCountUp(followersTarget, countActive);
 
   useEffect(() => {
     const el = counterRef.current;
@@ -78,17 +80,40 @@ export function Hero() {
           </div>
 
           <div className="mt-14 flex flex-wrap gap-10 border-t border-sand pt-10">
-            {hero.stats.map((stat, i) => (
-              <div key={stat.label}>
-                <div
-                  ref={i === 0 ? counterRef : undefined}
-                  className="font-serif text-4xl font-semibold text-primary"
-                >
-                  {stat.count && countActive ? count : stat.value}
-                </div>
-                <div className="mt-1 text-[0.72rem] tracking-wide text-muted">{stat.label}</div>
-              </div>
-            ))}
+            {hero.stats.map((stat) => {
+              const value =
+                "count" in stat && stat.count && countActive ? count : stat.value;
+              const content = (
+                <>
+                  <div
+                    ref={"count" in stat && stat.count ? counterRef : undefined}
+                    className="font-serif text-4xl font-semibold text-primary"
+                  >
+                    {value}
+                  </div>
+                  <div className="mt-1 text-[0.72rem] tracking-wide text-muted">
+                    {stat.label}
+                  </div>
+                </>
+              );
+
+              if ("href" in stat && stat.href) {
+                return (
+                  <a
+                    key={stat.label}
+                    href={stat.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-80"
+                    aria-label={`${stat.label} en Instagram`}
+                  >
+                    {content}
+                  </a>
+                );
+              }
+
+              return <div key={stat.label}>{content}</div>;
+            })}
           </div>
         </div>
 
