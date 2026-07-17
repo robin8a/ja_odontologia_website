@@ -9,9 +9,9 @@ export const site = {
   whatsapp: "https://wa.me/573177372490",
   whatsappMessage:
     "https://wa.me/573177372490?text=Hola%20Dra.%20Isabel%2C%20quiero%20informaci%C3%B3n%20sobre%20un%20tratamiento.",
-  email: "contacto@isajaramillo.com",
+  email: "isabelc26@hotmail.com",
   phone: "+57 (317) 737-2490",
-  hours: "Lun – Sáb · 8:00am – 6:00pm",
+  hours: "Lunes–Viernes: 8:00 am – 6:00 pm\nSábados: 8:00 am – 1:00 pm",
 } as const;
 
 export const navLinks = [
@@ -41,7 +41,7 @@ export const hero = {
     { value: "✓", label: "Niños y Adultos" },
   ],
   badgeUniversity: { title: "Universidad del Valle", subtitle: "Especialista en Ortodoncia" },
-  badgeSco: { title: "Sociedad Colombiana", subtitle: "de Ortodoncia" },
+  badgeSco: { title: "SCO Sociedad Colombiana", subtitle: "de Ortodoncia" },
 };
 
 export const marqueeItems = [
@@ -49,42 +49,66 @@ export const marqueeItems = [
   "Invisalign® Doctor",
   "Láser de Diodo",
   "Escáner Intraoral 3D",
-  "Carillas de Porcelana",
+  "Carillas en Resina y Porcelana",
+  "Aclaramiento Dental",
   "Cali · Colombia",
   "Unicentro Oasis 503B",
   "Sociedad Colombiana de Ortodoncia",
 ];
 
+export const servicesHeading = {
+  tag: "Nuestros servicios",
+  title: "Cuidado Dental",
+  titleEm: "Integral",
+  intro:
+    "Somos una solución completa, accesible y de alta calidad para cubrir tus necesidades dentales. Te guiamos y direccionamos de manera personalizada, según tus necesidades, hacia las diferentes especialidades de la Odontología.",
+};
+
 export const services = [
   {
     num: "01",
-    name: "Ortodoncia con Brackets",
-    desc: "Brackets metálicos y estéticos de alta eficiencia para corregir alineación y oclusión con resultados precisos y duraderos.",
+    name: "Odontología Integral",
+    desc: "Énfasis en prevención: higiene oral, fluorización, sellantes. Retiro de caries.",
   },
   {
     num: "02",
-    name: "Invisalign®",
-    desc: "Alineadores invisibles a medida. Como Invisalign Doctor certificada, ofrezco el tratamiento más avanzado sin brackets visibles.",
+    name: "Ortodoncia",
+    desc: "Alineadores transparentes a medida de alta eficiencia para corregir alineación y oclusión. Brackets metálicos y cerámicos.",
   },
   {
     num: "03",
-    name: "Láser de Diodo",
-    desc: "Tecnología láser para procedimientos gingivales, blanqueamiento y bioestimulación postquirúrgica de última generación.",
+    name: "Diseño de Sonrisa, Aclaramiento y Carillas",
+    desc: "Sonrisas armónicas con resultados naturales y duraderos.",
   },
   {
     num: "04",
-    name: "Carillas de Porcelana",
-    desc: "Carillas cerámicas y de resina para transformar la estética de tu sonrisa con resultados naturales y duraderos.",
+    name: "Escáner Intraoral iTero®",
+    desc: "Impresiones digitales 3D para mayor comodidad y precisión en tu tratamiento.",
   },
   {
     num: "05",
-    name: "Escáner Intraoral",
-    desc: "Impresiones digitales 3D precisas. Eliminamos moldes físicos para mayor comodidad y precisión en tu tratamiento.",
+    name: "Láser de Diodo Gemini®",
+    desc: "Tratamiento de herpes/aftas, dolor articular, neuralgia/parestesia, disminución de dolor e inflamación: mayor velocidad de cicatrización, recorte de encías.",
   },
   {
     num: "06",
-    name: "Tratamiento de Conducto",
-    desc: "Endodoncia especializada para salvar dientes con infección activa o caries profundas, con mínimo dolor y máxima efectividad.",
+    name: "Rehabilitación Oral",
+    desc: "Prótesis fija (coronas individuales, puentes). Prótesis removibles.",
+  },
+  {
+    num: "07",
+    name: "Periodoncia",
+    desc: "Prevención y tratamiento de enfermedades de encías y hueso para un soporte dental sólido. Implantes dentales.",
+  },
+  {
+    num: "08",
+    name: "Cirugía Maxilofacial",
+    desc: "Extracción de cordales, cirugía ortognática.",
+  },
+  {
+    num: "09",
+    name: "Endodoncia",
+    desc: "Tratamientos de conducto más rápidos y sin dolor, para tratar el nervio del diente y evitar su extracción.",
   },
 ];
 
@@ -93,15 +117,15 @@ export const about = {
   title: "Pasión por la",
   titleEm: "ortodoncia",
   bio: [
-    "Soy la Dra. Isabel Jaramillo, especialista en Ortodoncia y Odontología Integral con formación en la Universidad del Valle. Mi misión es transformar sonrisas con un enfoque personalizado, combinando ciencia, estética y tecnología de punta.",
-    "Como Invisalign Doctor certificada y miembro activa de la Sociedad Colombiana de Ortodoncia, me mantengo a la vanguardia de los últimos avances para ofrecerte los mejores resultados.",
+    "Soy la Dra. Isabel Jaramillo, Odontóloga Integral y Especialista en Ortodoncia con formación en la Universidad del Valle. Mi misión es transformar sonrisas con un enfoque personalizado, combinando ciencia, estética y tecnología de punta.",
+    "Como Invisalign Doctor y miembro activa de la Sociedad Colombiana de Ortodoncia, me mantengo a la vanguardia de los últimos avances para ofrecerte los mejores resultados.",
   ],
-  years: "+8",
+  years: "+18",
   credentials: [
     "Especialista en Ortodoncia — Universidad del Valle",
     "Miembro de la Sociedad Colombiana de Ortodoncia",
-    "Invisalign Doctor Certificada",
-    "Congresos internacionales de actualización continua",
+    "Invisalign Doctor",
+    "Actualización continua. Congresos nacionales e internacionales",
   ],
 };
 
@@ -110,27 +134,14 @@ export const invisalign = {
   title: "Alineadores",
   titleEm: "invisibles",
   titleEnd: "a tu medida",
-  desc: "Como proveedora certificada de Invisalign, diseño tu tratamiento con tecnología 3D para que veas el resultado antes de empezar. Sin brackets, sin incomodidades.",
+  desc: "Como proveedora de Invisalign, diseño tu tratamiento con tecnología 3D para que veas el resultado antes de empezar. Sin brackets, sin incomodidades.",
   features: [
-    "Removibles — come lo que quieras",
-    "Casi invisibles — nadie lo notará",
-    "Planificación digital 3D con resultado previsto",
-    "Citas menos frecuentes, mayor comodidad",
-  ],
-};
-
-export const whyChooseUs = {
-  tag: "Por qué elegirnos",
-  title: "Odontología que te hace",
-  titleEm: "sentir bien",
-  intro:
-    "Combinamos atención personalizada, tecnología de punta y un enfoque sin juicios — para que cada visita sea cómoda y orientada a resultados.",
-  points: [
-    "Ortodoncia y odontología integral en un solo lugar",
-    "Enfoque personalizado para cada paciente",
-    "Invisalign Doctor certificada y miembro de la Sociedad Colombiana de Ortodoncia",
-    "Tecnología digital: escáner intraoral y láser de diodo",
-    "Consultorio en Unicentro, Cali — horarios flexibles",
+    "Removibles – Te los retiras para comer y cepillarte",
+    "Facilidad para hacer tu higiene oral",
+    "Estéticos – casi invisibles",
+    "Planificación Digital 3D con previsualización del resultado final",
+    "Citas menos frecuentes y más rápidas",
+    "Más cómodos",
   ],
 };
 
@@ -156,43 +167,48 @@ export const testimonials = [
     initial: "C",
     accent: "teal-dark" as const,
   },
+  {
+    text: "La recomiendo por su profesionalismo y calidad humana.",
+    name: "Daniela Tello",
+    service: "Paciente",
+    initial: "D",
+    accent: "teal" as const,
+  },
 ];
 
 export const galleryLabels = [
-  "Brackets",
   "Invisalign",
+  "Antes y Después",
+  "Escáner 3D Intraoral",
+  "Aclaramiento Dental",
+  "Carillas",
   "Láser",
-  "Carillas",
-  "Antes/Después",
-  "Escáner 3D",
   "Endodoncia",
-  "Pacientes",
-  "Ortodoncia",
-  "Congreso",
-  "Carillas",
-  "Pacientes IJ",
+  "Higiene Oral",
+  "Cirugía Maxilofacial",
   "Brackets",
-  "Invisalign",
-  "Blanqueamiento",
 ];
 
 export const formServices = [
-  "Ortodoncia con brackets",
-  "Invisalign®",
+  "Odontología Integral",
+  "Ortodoncia",
+  "Diseño de Sonrisa, Aclaramiento y Carillas",
+  "Escáner Intraoral iTero®",
+  "Láser de Diodo Gemini®",
+  "Rehabilitación Oral",
+  "Periodoncia",
+  "Cirugía Maxilofacial",
+  "Endodoncia",
   "Consulta de valoración",
-  "Carillas",
-  "Láser de diodo",
-  "Tratamiento de conducto",
-  "Odontología general",
   "Otro",
 ];
 
 export const footerServices = [
-  { href: "#servicios", label: "Ortodoncia" },
+  { href: "#servicios", label: "Odontología Integral" },
   { href: "#invisalign", label: "Invisalign®" },
+  { href: "#servicios", label: "Ortodoncia" },
   { href: "#servicios", label: "Carillas" },
   { href: "#servicios", label: "Láser de Diodo" },
-  { href: "#servicios", label: "Escáner Intraoral" },
   { href: "#servicios", label: "Endodoncia" },
 ];
 

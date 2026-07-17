@@ -80,7 +80,7 @@ export function Contact() {
                       {d.value}
                     </Link>
                   ) : (
-                    <div className="font-medium text-ink">{d.value}</div>
+                    <div className="whitespace-pre-line font-medium text-ink">{d.value}</div>
                   )}
                 </div>
               </div>

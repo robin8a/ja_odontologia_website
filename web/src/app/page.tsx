@@ -4,7 +4,6 @@ import { Marquee } from "@/components/Marquee";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { InvisalignSection } from "@/components/InvisalignSection";
-import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { Testimonials } from "@/components/Testimonials";
 import { Gallery } from "@/components/Gallery";
 import { BookCta } from "@/components/BookCta";
@@ -22,7 +21,6 @@ export default function Home() {
         <Services />
         <About />
         <InvisalignSection />
-        <WhyChooseUs />
         <Testimonials />
         <Gallery />
         <BookCta />

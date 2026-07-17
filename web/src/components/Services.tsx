@@ -1,4 +1,4 @@
-import { services } from "@/lib/content";
+import { services, servicesHeading } from "@/lib/content";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export function Services() {
@@ -6,10 +6,13 @@ export function Services() {
     <section id="servicios" className="scroll-mt-20 bg-white py-24 md:py-28">
       <div className="mx-auto max-w-6xl px-6 md:px-10">
         <div className="mb-16 grid gap-10 md:grid-cols-2 md:items-end">
-          <SectionHeading tag="Nuestros servicios" title="Cuidado dental" titleEm="integral" />
+          <SectionHeading
+            tag={servicesHeading.tag}
+            title={servicesHeading.title}
+            titleEm={servicesHeading.titleEm}
+          />
           <p className="max-w-md text-[0.9rem] leading-relaxed text-muted">
-            Desde ortodoncia tradicional hasta alineadores invisibles, láser dental y odontología
-            estética. Todo bajo el mismo techo.
+            {servicesHeading.intro}
           </p>
         </div>
 

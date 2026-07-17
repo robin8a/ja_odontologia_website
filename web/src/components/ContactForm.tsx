@@ -53,7 +53,7 @@ export function ContactForm() {
           label="WhatsApp / Teléfono"
           name="telefono"
           type="tel"
-          placeholder="+57 300 000 0000"
+          placeholder="Tu WhatsApp"
           required
         />
         <FormField
