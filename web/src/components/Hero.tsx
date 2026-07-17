@@ -100,7 +100,7 @@ export function Hero() {
           <div className="relative w-full max-w-md">
             <div className="relative aspect-[3/4] overflow-hidden rounded-[200px_200px_40px_40px] bg-gradient-to-br from-primary-light to-primary-dark shadow-xl">
               <Image
-                src="/images/hero.jpg"
+                src="/images/hero.png"
                 alt="Dra. Isabel Jaramillo"
                 fill
                 className="object-cover object-top"
